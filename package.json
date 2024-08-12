@@ -21,6 +21,6 @@
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {
-    "react-native": ">=0.60 <0.72"
+    "react-native": ">=0.70 <0.72"
   }
 }
