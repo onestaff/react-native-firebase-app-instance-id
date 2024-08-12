@@ -7,7 +7,9 @@ buildscript {
         minSdkVersion = 21
         compileSdkVersion = 34
         targetSdkVersion = 34
-        firebaseAnalyticsVersion = "21.1.1"
+        // https://firebase.google.com/support/release-notes/android#analytics_v21-4-0
+        // The next version 21.4.0 bumps minSdkVersion
+        firebaseAnalyticsVersion = "21.3.0"
     }
     repositories {
       google()
