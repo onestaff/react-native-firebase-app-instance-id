@@ -47,7 +47,7 @@ def supportsNamespace() {
 
 android {
   if (supportsNamespace()) {
-    namespace "react-native-firebase-app-instance-id"
+    namespace "com.rnfirebaseappinstanceid"
 
     sourceSets {
       main {
