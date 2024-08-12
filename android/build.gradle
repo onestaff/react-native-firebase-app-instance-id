@@ -7,8 +7,7 @@ buildscript {
         minSdkVersion = 21
         compileSdkVersion = 34
         targetSdkVersion = 34
-        // https://firebase.google.com/support/release-notes/android#bom_v32-7-2
-        firebaseBom = "32.7.2"
+        firebaseAnalyticsVersion = "21.1.1"
     }
     repositories {
       google()
@@ -46,7 +45,7 @@ def supportsNamespace() {
 
 android {
   if (supportsNamespace()) {
-    namespace "com.awesomemodule"
+    namespace "react-native-firebase-app-instance-id"
 
     sourceSets {
       main {
@@ -75,6 +74,5 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
 
-  implementation platform("com.google.firebase:firebase-bom:${safeExtGet("firebaseBom", "32.7.2")}")
-  implementation "com.google.firebase:firebase-analytics"
+  implementation 'com.google.firebase:firebase-analytics:${firebaseAnalyticsVersion}'
 }
