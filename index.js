@@ -4,7 +4,7 @@ const { FirebaseAppInstanceId } = NativeModules
 
 /**
  * Get the instance ID
- * @return string
+ * @return Promise<string>
  */
 export function getId() {
   return FirebaseAppInstanceId.getId()

@@ -12,5 +12,7 @@
 ```ts
 import { getId as getAppInstanceId } from 'react-native-firebase-app-instance-id';
 
-getAppInstanceId();// Here is the value
+getAppInstanceId().then((appInstanceId: string) => {
+  console.log('appInstanceId', appInstanceId)
+});
 ```
