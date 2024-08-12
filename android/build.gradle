@@ -30,8 +30,9 @@ project.ext {
         buildTools: "28.0.3"
       ],
 
-      firebase          : [
-        bom: "24.1.0",
+      firebase: [
+        // https://firebase.google.com/support/release-notes/android#bom_v32-7-2
+        bom: "32.7.2",
       ],
     ],
   ])
