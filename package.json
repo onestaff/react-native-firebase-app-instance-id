@@ -2,8 +2,9 @@
   "name": "react-native-firebase-app-instance-id",
   "title": "React Native Firebase App Instance Id",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "Access the firebase app instance ID",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +21,6 @@
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {
-    "react-native": ">=0.60 <0.62"
+    "react-native": ">=0.70 <0.72"
   }
 }

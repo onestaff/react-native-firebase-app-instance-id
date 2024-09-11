@@ -9,9 +9,10 @@
 `$ react-native link react-native-firebase-app-instance-id`
 
 ## Usage
-```javascript
-import FirebaseAppInstanceId from 'react-native-firebase-app-instance-id';
+```ts
+import { getId as getAppInstanceId } from 'react-native-firebase-app-instance-id';
 
-// TODO: What to do with the module?
-FirebaseAppInstanceId;
+getAppInstanceId().then((appInstanceId: string) => {
+  console.log('appInstanceId', appInstanceId)
+});
 ```
